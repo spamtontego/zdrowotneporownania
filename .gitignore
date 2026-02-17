@@ -1,0 +1,23 @@
+# IDE
+.vscode/
+.idea/
+
+# OS files
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Claude/Agent skills (dev tools, not for production)
+.agent/
+.agents/
+.claude/
+
+# Internal docs (not for production)
+KEYWORD-RESEARCH.md
+DEPLOY-CHECKLIST.md
+ZdrowotnePorownania_BrandingBook.pdf
+porownanie-template.html
+blog-post-template.html
+
+# Node (if ever added)
+node_modules/

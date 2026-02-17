@@ -1,0 +1,22 @@
+# ZdrowotnePorownania.pl — robots.txt
+# Niezależny portal porównawczy produktów zdrowotnych
+
+User-agent: *
+Allow: /
+Disallow: /img/
+
+# AI Crawlers — welcome (GEO / AI Overviews visibility)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+# Sitemap
+Sitemap: https://zdrowotneporownania.pl/sitemap.xml
