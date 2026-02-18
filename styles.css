@@ -784,6 +784,45 @@ h3 {
   background: var(--teal-600);
 }
 
+/* --- Search Dropdown --- */
+.search-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  margin-top: var(--space-xs);
+  display: none;
+  z-index: 100;
+  overflow: hidden;
+  border: 1px solid var(--gray-200);
+}
+
+.search-dropdown__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-md) var(--space-lg);
+  color: var(--gray-700);
+  text-decoration: none;
+  font-size: 0.9375rem;
+  transition: background var(--transition-fast);
+}
+
+.search-dropdown__item:hover {
+  background: var(--teal-50);
+  color: var(--teal-700);
+}
+
+.search-dropdown__empty {
+  padding: var(--space-md) var(--space-lg);
+  color: var(--gray-500);
+  font-size: 0.875rem;
+  text-align: center;
+}
+
 /* ============================================
    CATEGORY CARDS — NOSU rounded rects
    ============================================ */
@@ -1871,10 +1910,17 @@ h3 {
 
   .hero__image {
     justify-content: center;
+    margin-right: 0;
   }
 
   .hero__image img {
-    max-width: 340px;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+  }
+
+  .hero {
+    overflow: hidden;
   }
 
   h1 {
