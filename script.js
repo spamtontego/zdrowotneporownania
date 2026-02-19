@@ -222,22 +222,24 @@ function initHeroSearch() {
     input.addEventListener('keydown', (e) => {
         if (e.key === 'Enter') {
             e.preventDefault();
+            const query = input.value.trim();
             const firstLink = dropdown.querySelector('.search-dropdown__item');
             if (firstLink) {
                 window.location.href = firstLink.href;
-            } else {
-                search(input.value.trim());
+            } else if (query.length >= 2) {
+                window.location.href = 'brak-wynikow.html?q=' + encodeURIComponent(query);
             }
         }
     });
 
     if (btn) {
         btn.addEventListener('click', () => {
+            const query = input.value.trim();
             const firstLink = dropdown.querySelector('.search-dropdown__item');
             if (firstLink) {
                 window.location.href = firstLink.href;
-            } else {
-                search(input.value.trim());
+            } else if (query.length >= 2) {
+                window.location.href = 'brak-wynikow.html?q=' + encodeURIComponent(query);
             }
         });
     }
