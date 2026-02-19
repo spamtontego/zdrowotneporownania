@@ -10,8 +10,8 @@
   <!-- Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://unpkg.com">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://unpkg.com" crossorigin>
+  <link rel="stylesheet" href="styles.min.css">
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
 </head>
@@ -35,6 +35,8 @@
     </div>
   </header>
 
+  <main>
+
   <!-- ========== 404 CONTENT ========== -->
   <section class="section" style="min-height: 60vh; display: flex; align-items: center; justify-content: center;">
     <div class="container" style="text-align: center; max-width: 600px;">
@@ -53,6 +55,7 @@
       </a>
     </div>
   </section>
+  </main>
 
   <!-- ========== FOOTER (NOSU-style) ========== -->
   <footer class="footer">
@@ -85,7 +88,7 @@
 
       <div class="footer__main">
         <div>
-          <h4 class="footer__heading">Portal</h4>
+          <div class="footer__heading">Portal</div>
           <div class="footer__links">
             <a href="index.html">Strona główna</a>
             <a href="polecamy.html">Polecamy</a>
@@ -96,7 +99,7 @@
         </div>
 
         <div>
-          <h4 class="footer__heading">Informacje</h4>
+          <div class="footer__heading">Informacje</div>
           <div class="footer__links">
             <a href="faq.html">FAQ</a>
             <a href="regulamin.html">Regulamin</a>
@@ -107,7 +110,7 @@
         </div>
 
         <div>
-          <h4 class="footer__heading">Zapisz się na newsletter</h4>
+          <div class="footer__heading">Zapisz się na newsletter</div>
           <form class="newsletter__form" onsubmit="event.preventDefault(); alert('Dziękujemy za zapis!');">
             <input type="text" placeholder="Imię">
             <input type="text" placeholder="Nazwisko">
@@ -130,7 +133,7 @@
   </footer>
 
   <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js" defer></script>
-  <script src="script.js" defer></script>
+  <script src="script.min.js" defer></script>
 </body>
 
 </html>
